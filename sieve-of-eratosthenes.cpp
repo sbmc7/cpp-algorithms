@@ -8,7 +8,7 @@ using namespace std;
 vector<int> sieveOfEratosthenes(int n){
 	//Sieve of Eratosthenes |
 	//Time Complexity :
-	//Space Complexity :
+	//Space Complexity : O(n)
 	
 	bool flag[n+1];
 	memset(flag, true, sizeof(flag));
