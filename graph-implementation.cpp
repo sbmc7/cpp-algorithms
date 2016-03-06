@@ -10,7 +10,7 @@ typedef struct Edge{
 		int c;//Cost of Edge
 	}Edge;
 	
-typedef struct graph{
+typedef struct Graph{
 	int V,E; //No. of Vertices and Edges
 	char *vertices; //Array for mapping vertices to lablel
 	list<Edge> *adj; //Adjacency List 
