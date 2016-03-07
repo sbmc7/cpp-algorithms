@@ -39,7 +39,7 @@ void Graph::addEdge(int from, int to, int cost){
 }
 //-----------Graph DS end-------------------------
 
-void bfs(Graph g, int s){
+void BFS(Graph g, int s){
 	//Alogorithm: only work for connected graph
 	//Time:O(V+E)
 	//Space:
@@ -79,6 +79,6 @@ int main(){
     g.addEdge(2, 0);
     g.addEdge(2, 3);
     g.addEdge(3, 3);
- 	bfs(g,2);
+ 	BFS(g,2);
 	return 0;
 }
