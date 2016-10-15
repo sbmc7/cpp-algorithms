@@ -7,8 +7,8 @@ using namespace std;
 //-----------Graph DS start-------------------------
 typedef struct Edge{
         int from;//start vertex
-		int to;//Ending vertex
-		int cost;//Cost of Edge
+	int to;//Ending vertex
+	int cost;//Cost of Edge
 	}Edge;
 
 typedef struct Graph{
