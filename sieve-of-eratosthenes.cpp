@@ -6,18 +6,14 @@
 using namespace std;
 
 vector<int> sieveOfEratosthenes(int n){
-	//Sieve of Eratosthenes |
-	//Time Complexity :
+	//Sieve of Eratosthenes
+	//Time Complexity : O(n)
 	//Space Complexity : O(n)
 	
 	bool flag[n+1];
 	memset(flag, true, sizeof(flag));
-	//0 and 1 is not considered as prime number
-	flag[0] = false;
-	flag[1] = false;
-	
 	for(int p=2; (p*p)<=n; ++p){
-		if(flag[p] == true){
+		if(flag[p]){
 			for(int i=(2*p); i<=n; i+=p){ 
 				//mark all multiplier of p as false
 				flag[i] = false;
@@ -25,8 +21,8 @@ vector<int> sieveOfEratosthenes(int n){
 		}
 	}
 	vector<int> primes;
-	for(int i=0; i<=n; ++i){
-		if(flag[i] == true){
+	for(int i=2; i<=n; ++i){
+		if(flag[i]){
 			primes.push_back(i);
 		}
 	}
